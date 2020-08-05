@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "94833d97-a399-42ba-84df-f4104a10d6d2",
+		"name": "SystemTesting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC-28(PerformaTesting)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "439132ce-9e68-4a69-85a3-c25d7d382761",
+						"exec": [
+							"pm.test(\"Response time is less than 3000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

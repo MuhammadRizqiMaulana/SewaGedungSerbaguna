@@ -1,0 +1,210 @@
+{
+  "id": "76b72dbd-830b-442b-9ce5-3aa3d2bb69c3",
+  "version": "2.0",
+  "name": "RegistrasiPenyewa",
+  "url": "http://127.0.0.1:8000/TambahAkunAdmin",
+  "tests": [{
+    "id": "97406275-91d8-4cbf-8be6-6a71f7c65a36",
+    "name": "TC-12",
+    "commands": [{
+      "id": "d841c320-78fd-45dc-81ed-d0cfdd383fe7",
+      "comment": "",
+      "command": "open",
+      "target": "/HalamanRegisterUser",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2071ede-8e30-4c3b-8b9f-5c455e35d29d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1300x715",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "965774c8-a5ab-46e2-8082-cbfc4a4b2f38",
+      "comment": "",
+      "command": "click",
+      "target": "id=nama",
+      "targets": [
+        ["id=nama", "id"],
+        ["name=nama", "name"],
+        ["css=#nama", "css:finder"],
+        ["xpath=//input[@id='nama']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0620ce93-1a25-447f-b07b-4825652c9e9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=nama",
+      "targets": [
+        ["id=nama", "id"],
+        ["name=nama", "name"],
+        ["css=#nama", "css:finder"],
+        ["xpath=//input[@id='nama']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "http://127.0.0.1:8000/HalamanRegisterUser"
+    }, {
+      "id": "f83cfdc5-d152-4462-83c4-a674dd5f8cc5",
+      "comment": "",
+      "command": "click",
+      "target": "id=nama",
+      "targets": [
+        ["id=nama", "id"],
+        ["name=nama", "name"],
+        ["css=#nama", "css:finder"],
+        ["xpath=//input[@id='nama']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfb2477f-9d0b-4578-aff8-d401209d8242",
+      "comment": "",
+      "command": "type",
+      "target": "id=nama",
+      "targets": [
+        ["id=nama", "id"],
+        ["name=nama", "name"],
+        ["css=#nama", "css:finder"],
+        ["xpath=//input[@id='nama']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Abdurokhman Wahid"
+    }, {
+      "id": "814285b6-f379-4dc7-a697-9a0065a0a63e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f59e64c2-9705-47cc-a910-070a3cdf4641",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "qwerty"
+    }, {
+      "id": "d32522d5-c79a-484c-bf83-a51f42aeee37",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-12 > .primary-btn",
+      "targets": [
+        ["css=.col-lg-12 > .primary-btn", "css:finder"],
+        ["xpath=//input[@value='Daftar']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65f80864-1914-4d81-bd96-a6eed8e4c912",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(3) .text-right",
+      "targets": [
+        ["css=.form-group:nth-child(3) .text-right", "css:finder"],
+        ["xpath=//span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'* email harus berupa email')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52b4763e-88b8-4129-ba74-fdc6ae191caa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(3) .text-right",
+      "targets": [
+        ["css=.form-group:nth-child(3) .text-right", "css:finder"],
+        ["xpath=//span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'* email harus berupa email')]", "xpath:innerText"]
+      ],
+      "value": "* email harus berupa email"
+    }]
+  }, {
+    "id": "b71d3e22-ec02-4601-8c5b-3d4db614b3d8",
+    "name": "TC-27",
+    "commands": [{
+      "id": "2956395c-1eca-4d55-b2fa-83b9ddf7e143",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/TambahAkunAdmin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d69a0f1-f19a-4a43-a0bc-1915c5ccaebd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1300x715",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c033e32e-c7d1-49bd-8959-d3591c1a6ce9",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90232d7b-fe2d-4bad-8cbf-7deb3e2c3d74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Simpan']", "xpath:attributes"],
+        ["xpath=//div[@id='container-wrapper']/div[2]/div/div/div[2]/form/div[8]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9da98aa1-76a8-4310-bafd-dd5210370a85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(2) .text-right",
+      "targets": [
+        ["css=.form-group:nth-child(2) .text-right", "css:finder"],
+        ["xpath=//div[@id='container-wrapper']/div[2]/div/div/div[2]/form/div/span/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'* nama masih kosong')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3239cef-0f66-4db0-8adf-62e2a8dc08bf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(2) .text-right",
+      "targets": [
+        ["css=.form-group:nth-child(2) .text-right", "css:finder"],
+        ["xpath=//div[@id='container-wrapper']/div[2]/div/div/div[2]/form/div/span/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'* nama masih kosong')]", "xpath:innerText"]
+      ],
+      "value": "* nama masih kosong"
+    }]
+  }],
+  "suites": [{
+    "id": "1a276812-fc78-4685-ace0-a058c99d2622",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["97406275-91d8-4cbf-8be6-6a71f7c65a36"]
+  }],
+  "urls": ["http://127.0.0.1:8000/", "http://127.0.0.1:8000/TambahAkunAdmin"],
+  "plugins": []
+}

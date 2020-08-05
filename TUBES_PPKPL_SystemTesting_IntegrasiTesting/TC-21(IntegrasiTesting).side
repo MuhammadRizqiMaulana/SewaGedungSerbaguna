@@ -1,0 +1,58 @@
+{
+  "id": "e8745416-b01c-46e6-92f5-d3b5240c9761",
+  "version": "2.0",
+  "name": "Penyewaan",
+  "url": "http://127.0.0.1:8000",
+  "tests": [{
+    "id": "85e5905d-fac4-4ec3-a7ad-4683c78e9ea0",
+    "name": "TC-21",
+    "commands": [{
+      "id": "89d0670b-4df2-4d0b-a7c1-dbae90e9ae0d",
+      "comment": "",
+      "command": "open",
+      "target": "/FormulirSewaGedung1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d69cf9fc-5181-41a0-86ca-8fd27bdec9b2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1300x715",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "008ac64e-63f5-452b-8d4d-d943d1b56965",
+      "comment": "",
+      "command": "click",
+      "target": "css=.genric-btn",
+      "targets": [
+        ["css=.genric-btn", "css:finder"],
+        ["xpath=//button[@type='Submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'SEWA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ac7ce4f-59f8-412b-b71d-5825d7e7659d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-danger:nth-child(5) > .text-right",
+      "targets": [
+        ["css=.text-danger:nth-child(5) > .text-right", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'* tanggal sewa masih kosong')]", "xpath:innerText"]
+      ],
+      "value": "* tanggal sewa masih kosong"
+    }]
+  }],
+  "suites": [{
+    "id": "1a547eb6-e859-41d3-9432-ec0ff19a0c65",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["85e5905d-fac4-4ec3-a7ad-4683c78e9ea0"]
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}
